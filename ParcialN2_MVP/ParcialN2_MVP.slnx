@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MVP_Datos/MVP_Datos.csproj" Id="8fd2a39a-fade-4e1b-888c-5d67c4756719" />
+  <Project Path="MVP_Entidades/MVP_Entidades.csproj" Id="13720829-e665-47c6-a519-55e9356a49f8" />
+  <Project Path="MVP_Negocio/MVP_Negocio.csproj" Id="4dd96c39-769a-4a41-83b8-a72e7d26b894" />
+  <Project Path="MVP_Presentacion/MVP_Presentacion.csproj" Id="e1f80e24-4016-4cd2-937d-ed57683cfc2a" />
+</Solution>

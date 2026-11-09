@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MVP_Datos
+{
+    public class D_Conexion
+    {
+        public static string cadenaConexion =
+        "Server=localhost; Database=parcial_mvp; Uid=root; Pwd=chiripa07;";
+    }
+}
