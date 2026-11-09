@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace MVP_Presentacion.Forms
 {
+
+    // Formulario encargado de ejecutar la lógica del juego Craps
     public partial class FrmCraps : Form
     {
         public FrmCraps()
@@ -21,13 +23,16 @@ namespace MVP_Presentacion.Forms
         {
 
         }
-
+        // Generador de números aleatorios para los lanzamientos
         private Random numerosAleatorios = new Random();
 
+        // Almacena el punto establecido por el jugador
         private int miPunto = 0;
 
+        // Indica si existe una partida en curso
         private bool juegoEnCurso = false;
 
+        // Valores especiales utilizados en las reglas del juego
         private enum NombresDados
         {
             DOS_UNOS = 2,
@@ -37,6 +42,7 @@ namespace MVP_Presentacion.Forms
             DOCE = 12
         }
 
+        // Simula el lanzamiento de dos dados
         private int TirarDados()
         {
             int dado1 = numerosAleatorios.Next(1, 7);
@@ -50,14 +56,19 @@ namespace MVP_Presentacion.Forms
             return suma;
         }
 
+        // Ejecuta la lógica principal del juego Craps
         private void btnLanzar_Click(object sender, EventArgs e)
         {
             int sumaDeDados = TirarDados();
 
+            // Primer lanzamiento
+
             if (!juegoEnCurso)
             {
                 switch ((NombresDados)sumaDeDados)
+
                 {
+                    // Victoria inmediata
                     case NombresDados.SIETE:
                     case NombresDados.ONCE:
 
@@ -65,6 +76,7 @@ namespace MVP_Presentacion.Forms
                         lblPunto.Text = "Punto: -";
                         break;
 
+                    // Derrota inmediata
                     case NombresDados.DOS_UNOS:
                     case NombresDados.TRES:
                     case NombresDados.DOCE:
@@ -73,6 +85,7 @@ namespace MVP_Presentacion.Forms
                         lblPunto.Text = "Punto: -";
                         break;
 
+                    // Se establece el punto y continúa la partida
                     default:
 
                         miPunto = sumaDeDados;
@@ -89,6 +102,7 @@ namespace MVP_Presentacion.Forms
             }
             else
             {
+                // Si vuelve a salir el punto, gana
                 if (sumaDeDados == miPunto)
                 {
                     lblResultado.Text =
@@ -98,6 +112,8 @@ namespace MVP_Presentacion.Forms
 
                     lblPunto.Text = "Punto: -";
                 }
+
+                // Si sale 7 antes del punto, pierde
                 else if (sumaDeDados == 7)
                 {
                     lblResultado.Text =

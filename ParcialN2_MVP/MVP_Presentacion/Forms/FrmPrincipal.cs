@@ -76,6 +76,7 @@ namespace MVP_Presentacion.Forms
             }
         }
 
+        // Abre formularios dentro del panel contenedor principal
 
         private void AbrirFormulario(Form formulario)
         {
@@ -110,6 +111,11 @@ namespace MVP_Presentacion.Forms
 
             lbl.Left = (panelContenedor.Width - lbl.Width) / 2;
             lbl.Top = (panelContenedor.Height - lbl.Height) / 2;
+        }
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

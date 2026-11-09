@@ -11,6 +11,7 @@ using MVP_Negocio.Servicios;
 
 namespace MVP_Presentacion.Presentador
 {
+    // Controla la lógica de autenticación utilizando el patrón MVP
     public class LoginPresenter
     {
         private readonly ILoginView vista;

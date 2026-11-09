@@ -4,8 +4,12 @@ using System.Text;
 
 namespace MVP_Negocio.Servicios
 {
+
+    // Implementa la generación y verificación de hashes SHA-256
     public class HashService : IHashService, IVerificarHashService
     {
+
+        // Genera un hash SHA-256 a partir de un texto plano
         public string GenerarHash(string textoPlano)
         {
             using (SHA256 sha = SHA256.Create())
@@ -24,6 +28,7 @@ namespace MVP_Negocio.Servicios
             }
         }
 
+        // Compara el hash generado con el hash almacenado
         public bool VerificarHash(string textoPlano,
                                   string hashAlmacenado)
         {
