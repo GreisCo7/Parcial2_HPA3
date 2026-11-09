@@ -139,9 +139,8 @@ F5
 
 **Descripción:** El sistema impide el acceso cuando alguno de los campos requeridos no contiene información.
 
-**Resultado:**
+<img width="1117" height="612" alt="image" src="https://github.com/user-attachments/assets/57abfa00-d912-4a02-9828-b2c28fa6f0f0" />
 
-<img width="547" height="341" alt="image" src="https://github.com/user-attachments/assets/5d3567c2-a615-4f60-88c6-58c2f9042283" />
 
 ---
 
@@ -149,29 +148,14 @@ F5
 
 **Descripción:** El sistema informa cuando la contraseña ingresada no coincide con el hash almacenado en la base de datos.
 
-**Resultado:**
+<img width="1117" height="615" alt="image" src="https://github.com/user-attachments/assets/fdc674f0-6623-4234-b81a-cc6b32b6500c" />
 
-<img width="561" height="325" alt="image" src="https://github.com/user-attachments/assets/7c58cfdf-15ee-4422-9d03-e340dfe2cbf4" />
 
 ---
 
 ### 2. Interfaz Principal (MDI)
 
-#### Menú Principal
-
-**Descripción:** Formulario principal con menú lateral, hora actual y usuario autenticado.
-
-**Resultado:**
-
-<img width="720" height="395" alt="image" src="https://github.com/user-attachments/assets/d5cd0681-7305-4a75-83d0-12451bfb3425" />
-
----
-
-#### Navegación entre Formularios
-
-**Descripción:** El sistema permite cargar formularios secundarios dentro del panel principal mediante los botones de navegación.
-
-**Resultado:**
+**Descripción:** El formulario principal permite la navegación entre módulos mediante un menú lateral. También muestra la hora actual y el usuario autenticado.
 
 <img width="723" height="401" alt="image" src="https://github.com/user-attachments/assets/ac143b84-ba12-46ab-a34d-10c661cf8226" />
 
@@ -183,8 +167,6 @@ F5
 
 **Descripción:** Implementación gráfica del lanzamiento de dados y cálculo del punto.
 
-**Resultado:**
-
 <img width="795" height="435" alt="image" src="https://github.com/user-attachments/assets/c456474c-0061-44f2-b365-1d187d429b75" />
 
 
@@ -193,8 +175,6 @@ F5
 #### Resultado del Juego
 
 **Descripción:** El sistema determina automáticamente si el jugador gana, pierde o continúa jugando según las reglas establecidas.
-
-**Resultado:**
 
 <img width="1122" height="610" alt="image" src="https://github.com/user-attachments/assets/1a6fc35a-abe4-4cd3-8ed6-1d3d34de7439" />
 
